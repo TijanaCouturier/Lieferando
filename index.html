@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/restaurant-16.png">
+
+</head>
+
+<body onload="responsiveButton()">
+    <div id="infoContainer"></div>
+
+    <div class="header">
+        <div class="logo">
+            <img class="logos" src="img/restaurant-32.png">
+            <h2 class="h2">Lieferandos</h1>
+        </div>
+        <div class="name">
+            <h3 class="h3">Saarlandstraße 26, Saarbrücken</h2>
+        </div>
+
+        <div class="menu">
+            <img class="german " src="img/germany.png ">
+            <img class="menu-icon" src="img/menü.png ">
+        </div>
+    </div>
+
+    <div class="content" id="content">
+
+        <div class="content-menu">
+            <div class="pizza">
+                <img class="img" src="img/pizza-gd2cdf082c_1920.jpg">
+                <img class="pizza-logo" src="img/pizza-g11e58c261_640.png">
+            </div>
+            <div class="bar">
+                <div class="bars">
+                    <h2 class="h1">Pizza Saar</h2>
+                    <div class="box">
+                        <div class="star">
+                            <img class="stars" src="img/star-32.png">
+                            <img class="stars" src="img/star-32.png">
+                            <img class="stars" src="img/star-32.png">
+                            <img class="stars" src="img/star-32.png">
+                            <img class="stars" src="img/star-32.png">
+                            <h4 class="informationen">(513 Bewertungen)</h4>
+                        </div>
+
+                        <div class="buttons">
+                            <div>
+                                <img id="infos" onclick="kontaktInfo()" class="button" src="img/info-32.png">
+                            </div>
+                            <div>
+                                <img id="like" onclick="Like()" class="button" src="img/herz.png">
+                            </div>
+
+                        </div>
+                    </div>
+                    </h1>
+
+                </div>
+            </div>
+
+            <div class="like-bar">
+                <img class="like-icons" src="img/search-icon.png">
+                <a id="best" href="#">Beliebte Gerichte</a>
+                <a href="#">Margherita</a>
+                <a href="#">Millenium</a>
+                <a href="#">Hawaii</a>
+                <a href="#">Party Pizza (50cm)</a>
+                <a href="#">Flammkuchen</a>
+            </div>
+
+            <div class="menu-all">
+                <h3 id="lovly" class="start">Beliebte Gerichte</h3>
+                <div class="pizza1">
+                    <div class="produkt-info">
+                        <div class="menu-name">
+                            <h3 id="pizza1">Margherita</h3>
+                            <h5 class="info">Produktinfo</h5>
+                        </div>
+                        <div class="infos">
+                            <h4 class="informationen">mit Tomatensauce, Käse</h4>
+                            <span id="price1" class="price">6,80€</span>
+                        </div>
+                    </div>
+
+                    <div onclick="addToBasket('Margherita', '6.80')" class="plus1">
+                        <img class="plus" src="img/plus-2-32.png">
+                    </div>
+                </div>
+
+                <div class="pizza1">
+                    <div class="produkt-info">
+                        <div class="menu-name">
+                            <h3 id="pizza2">Millenium</h3>
+                            <h5 class="info">Produktinfo</h5>
+                        </div>
+                        <div class="infos">
+                            <h4 class="informationen">mit Spaghetti, Bolognesesouce, Sahne und Käse</h4>
+                            <span id="price2" class="price">9,80€</span>
+                        </div>
+                    </div>
+
+                    <div onclick="addToBasket('Millenium', '9.80')" class="plus1">
+                        <img class="plus" src="img/plus-2-32.png">
+                    </div>
+                </div>
+                <div class="pizza1">
+                    <div class="produkt-info">
+                        <div class="menu-name">
+                            <h3 id="pizza3">Hawaii</h3>
+                            <h5 class="info">Produktinfo</h5>
+                        </div>
+                        <div class="infos">
+                            <h4 class="informationen">mit Ananas, Schinken, Tomatensauce und Käse</h4>
+                            <span id="price3" class="price">8,50€</span>
+                        </div>
+                    </div>
+
+                    <div onclick="addToBasket('Hawaii', '8.50')" class="plus1">
+                        <img class="plus" src="img/plus-2-32.png">
+                    </div>
+                </div>
+
+                <div class="pizza1">
+                    <div class="produkt-info">
+                        <div class="menu-name">
+                            <h3 id="pizza4">Party Pizza ( 50cm )</h3>
+                            <h5 class="info">Produktinfo</h5>
+                        </div>
+                        <div class="infos">
+                            <h4 class="informationen">mit 4 Belegen inklusive</h4>
+                            <span id="price4" class="price">9,90€</span>
+                        </div>
+                    </div>
+
+                    <div onclick="addToBasket('Party Pizza', '9.90')" class="plus1">
+                        <img class="plus" src="img/plus-2-32.png">
+                    </div>
+                </div>
+                <div class="pizza1">
+                    <div class="produkt-info">
+                        <div class="menu-name">
+                            <h3 id="pizza5">Flammkuchen</h3>
+                            <h5 class="info">Produktinfo</h5>
+                        </div>
+                        <div class="infos">
+                            <h4 class="informationen">mit Dünnfleisch, Zwiebeln, Creme Fraiche und Käse</h4>
+                            <span id="price5" class="price">7,50€</span>
+                        </div>
+                    </div>
+
+                    <div onclick="addToBasket('Flammkuchen', '7.50')" class="plus1">
+                        <img class="plus" src="img/plus-2-32.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderButton" id="orderButton">
+            <div></div>
+        </div>
+
+        <div class="shoppingCart" id="shoppingCart ">
+            <div id="basket " class="basket_list">
+                <span class="basket-name">Warenkorb</span>
+                <div class="order" id="order ">
+                    <img class="logos" src="img/cart-68-32.png">
+                    <span class="order-text">Ihre Bestellung</span>
+                    <span class="order-text1" id="basket">Bestellen Sie ein Spezialität Ihrer Wahl bei der beste Pizzeria Saarbrückens.  </span>
+                </div>
+                <div id="orderlist " class="orderlist">
+                </div>
+                <div class="content-right" id="Sum " style="display: none">
+                    <div class="sum">
+                        <div>
+                            <div class="table">
+                                <span>Zwischensumme</span>
+                                <span id="Zwischensumme"></span>
+                            </div>
+                            <div class="table">
+                                <span>Lieferkosten</span>
+                                <span>1.95€</span>
+                            </div>
+                            <div class="table">
+                                <span class="td-pizza">Gesamt</span>
+                                <span class="td-pizza" id="Gesamt"></span>
+                            </div>
+                        </div>
+
+                        <div class="r">
+                            <div id="remove ">
+                                <div class="mini-text">
+                                    <div>
+                                        <span class="mini">Benötigter Betrag, um den Mindestbestellwert zu erreichen</span>
+                                    </div>
+                                    <div>
+                                        <span id="minprice" class="mini-price"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="min-save">Leider kannst du noch nicht bestellen. Pizza Saar liefert erst ab einem Mindestbestellwert von 15,00€(exkl. Lieferkosten). </p>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="paybutton " class="pay-button" disabled>Bezahlen ()</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="responsiveButton" id="responsiveButton" onclick="shoppingCart()">
+
+    </div>
+
+    <div class="dialog-shopingCart" id="dialog-shoppingCart"></div>
+
+    <div class="contentContainer-footer">
+        <div class="footer">
+
+            <div class="footer-logo">
+                <a href="#"><img class="logo-pizza" src="img/restaurant-32.png"></a>
+                <div class="footer1">
+                    © 2022 Lieferandos
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer1">
+                    <a href="#"><br>Impressum</a>
+                    <a href="#"><br> Kontakt</a>
+                    <a href="#"><br> Datenschutz</a>
+                </div>
+
+                <div class="footer-social-media">
+                    <a href="https://www.facebook.de"> <img class="social-media-icons" src="img/facebook-3-48.png"></a>
+                    <a href="https://www.instagram.de"> <img class="social-media-icons" src="img/instagram-5-48.png"></a>
+                    <a href="https://www.youtube.de"> <img class="social-media-icons" src="img/youtube-48.png"></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
